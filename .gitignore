@@ -1,0 +1,36 @@
+# Xcode
+xcuserdata/
+*.xcuserstate
+DerivedData/
+.build/
+*.moved-aside
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+
+# Xcode workspace user data
+*.xcworkspace/xcuserdata/
+project.xcworkspace/xcuserdata/
+
+# Swift Package Manager
+.swiftpm/
+
+# CocoaPods
+Pods/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# Build
+build/
+*.ipa
+*.dSYM.zip
+*.dSYM
