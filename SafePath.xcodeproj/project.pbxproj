@@ -1,0 +1,1107 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		024DF0562BB9C849F4BB5D37 /* MockPreparednessRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEE78B306D8B06C952A542B /* MockPreparednessRepository.swift */; };
+		049D1C098B0241FBFF52174E /* FirstAidGuideViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C45EEF6C37221253BB17A15 /* FirstAidGuideViewModelTests.swift */; };
+		150EC7462DC50A45E3F21201 /* ShelterViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB840357D81C728A99CF2F5 /* ShelterViewModelTests.swift */; };
+		190E87A29F65DD571933C395 /* RouteRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E484216F2C7F1B0FBD9C19E /* RouteRepositoryTests.swift */; };
+		1A83571A857F3D04475CC1AE /* MockRepositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A144189EE5C321AAB1D57A /* MockRepositories.swift */; };
+		24710173BCB2EF603678DD6C /* MockAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D30A3D3F43A9F671BE38F7 /* MockAPIService.swift */; };
+		28057E803116F6A10EE5243E /* PreparednessViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ED7091D806A52D8C4E0E23 /* PreparednessViewModelTests.swift */; };
+		282FED17C294E68067261AC8 /* FamilySafetyViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEED4D591DA3B30C8CF8FBF /* FamilySafetyViewModelTests.swift */; };
+		2CBB9EEF08316E309932E026 /* TestDataFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C74C11E0C5673604D912055 /* TestDataFactory.swift */; };
+		2D8DC59593143E1A6EA0BBCD /* MockDisasterPreparationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003BF687DC208B331C2B4BC4 /* MockDisasterPreparationRepository.swift */; };
+		31C142F4C5EBD1C8AE50604E /* EvacuationRouteViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D762DCC8D026BABD3C42DB9 /* EvacuationRouteViewModelTests.swift */; };
+		33174D40E876E0163EE8C40A /* EmergencyStatusRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D679B00813AA28CFDFB76235 /* EmergencyStatusRepositoryTests.swift */; };
+		4525FDBAFE94A65E9FFCA55D /* MockChecklistRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D1CC584D97683A1B2E0D6D /* MockChecklistRepository.swift */; };
+		45DB4382091BA40950B2695A /* DisasterPreparationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E11D6F60CA3466969B8208B /* DisasterPreparationViewModelTests.swift */; };
+		526631442FA3A7210003F97E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 526631432FA3A7210003F97E /* FirebaseAuth */; };
+		526631462FA3A72D0003F97E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 526631452FA3A72D0003F97E /* FirebaseFirestore */; };
+		526631482FA3B07E0003F97E /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 526631472FA3B07E0003F97E /* FirebaseCore */; };
+		5A1B8B11CA68DA2361D8A3E1 /* CustomizeChecklistViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF82FED938E7B7033944BFEA /* CustomizeChecklistViewModelTests.swift */; };
+		5C6897353DC82C5BD92985D3 /* DisasterAlertViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CED87C0B6C8847EA3736931 /* DisasterAlertViewModelTests.swift */; };
+		7104E6D7B1B0B466DDC69E89 /* EmergencyStatusViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909693707CABAA78FDEE7E58 /* EmergencyStatusViewModelTests.swift */; };
+		712FE010233907F499C0130B /* ShelterRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE5A6E6BCE2ABB5C46CF274 /* ShelterRepositoryTests.swift */; };
+		7BFD528A823A4F7C5EEF72B4 /* FamilyRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B75B134FF1E3423D4026ABA /* FamilyRepositoryTests.swift */; };
+		812FF644AEB26068F906AC96 /* MockEmergencyStatusRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAA62EEE2F72DE7CA447DBB /* MockEmergencyStatusRepository.swift */; };
+		897226367EF64DE9F481ECBF /* SafePathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2792389F4C12265320F6D004 /* SafePathTests.swift */; };
+		B825191B2FD1A38600C16BEC /* TestPlan.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = B825191A2FD1A38600C16BEC /* TestPlan.xctestplan */; };
+		B8C346532FD96E1C00D2F5AE /* SafePathWatchApp Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B8C346332FD96E1B00D2F5AE /* SafePathWatchApp Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B8C347592FD973DE00D2F5AE /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C347582FD973DE00D2F5AE /* WatchConnectivity.framework */; };
+		BCD9119433A2363263984DE9 /* LocationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962E7BDDC4D0C13722FFA1B9 /* LocationServiceTests.swift */; };
+		C1D9845FBBF9EBCD172C4B14 /* MockFamilyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F926F6579787D941EA1D15A /* MockFamilyRepository.swift */; };
+		C53FA26539EBF6EF798740DE /* MockFirstAidRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398DD9C699F3AEF2CF43E87A /* MockFirstAidRepository.swift */; };
+		D65BDC8D19D147426F38DC93 /* UserManagementViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD451920A60752700576E0B /* UserManagementViewModelTests.swift */; };
+		DF46C151C74EF290D46F2D00 /* DisasterAlertRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AD64016D6C1665A1B865DC /* DisasterAlertRepositoryTests.swift */; };
+		E5065258FC40ABC3F660BA92 /* TestDataFactory+Person2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEBF1A126027A588E2C15D2 /* TestDataFactory+Person2.swift */; };
+		E6CCFCE3096C67EC6FCE3A60 /* MockUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3BF251CD98D0B6754BA55E /* MockUserRepository.swift */; };
+		EBEB87DB73A61D141FDCAA0D /* UserRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F422093B42886AADAB850B77 /* UserRepositoryTests.swift */; };
+		F6D1BA79B290428829F7121D /* SafePathAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC70E3443123473C9E142361 /* SafePathAppTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B8B40D0E2FD9D7D600E14DA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 526630E62FA39A560003F97E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8C346322FD96E1B00D2F5AE;
+			remoteInfo = "SafePathWatchApp Watch App";
+		};
+		B8C3462C2FD96C8700D2F5AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 526630E62FA39A560003F97E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F150C882FD01BCB0029E15F;
+			remoteInfo = "SafePathWatch Watch App";
+		};
+		B8C346402FD96E1C00D2F5AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 526630E62FA39A560003F97E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8C346322FD96E1B00D2F5AE;
+			remoteInfo = "SafePathWatchApp Watch App";
+		};
+		B8C3464A2FD96E1C00D2F5AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 526630E62FA39A560003F97E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8C346322FD96E1B00D2F5AE;
+			remoteInfo = "SafePathWatchApp Watch App";
+		};
+		F0D87FF4D4E5856B9210D1A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 526630E62FA39A560003F97E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 526630ED2FA39A560003F97E;
+			remoteInfo = SafePath;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B8C3462B2FD96C7A00D2F5AE /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B8C346532FD96E1C00D2F5AE /* SafePathWatchApp Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		003BF687DC208B331C2B4BC4 /* MockDisasterPreparationRepository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MockDisasterPreparationRepository.swift; sourceTree = "<group>"; };
+		0B3BF251CD98D0B6754BA55E /* MockUserRepository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MockUserRepository.swift; sourceTree = "<group>"; };
+		2792389F4C12265320F6D004 /* SafePathTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SafePathTests.swift; sourceTree = "<group>"; };
+		2C45EEF6C37221253BB17A15 /* FirstAidGuideViewModelTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FirstAidGuideViewModelTests.swift; sourceTree = "<group>"; };
+		2D762DCC8D026BABD3C42DB9 /* EvacuationRouteViewModelTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EvacuationRouteViewModelTests.swift; sourceTree = "<group>"; };
+		2DEBF1A126027A588E2C15D2 /* TestDataFactory+Person2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "TestDataFactory+Person2.swift"; sourceTree = "<group>"; };
+		398DD9C699F3AEF2CF43E87A /* MockFirstAidRepository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MockFirstAidRepository.swift; sourceTree = "<group>"; };
+		3B75B134FF1E3423D4026ABA /* FamilyRepositoryTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FamilyRepositoryTests.swift; sourceTree = "<group>"; };
+		3C74C11E0C5673604D912055 /* TestDataFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TestDataFactory.swift; sourceTree = "<group>"; };
+		3F684B2F2FD1737B00A40153 /* SafePathAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SafePathAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E484216F2C7F1B0FBD9C19E /* RouteRepositoryTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RouteRepositoryTests.swift; sourceTree = "<group>"; };
+		526630EE2FA39A560003F97E /* SafePath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafePath.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		62D30A3D3F43A9F671BE38F7 /* MockAPIService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MockAPIService.swift; sourceTree = "<group>"; };
+		63D1CC584D97683A1B2E0D6D /* MockChecklistRepository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MockChecklistRepository.swift; sourceTree = "<group>"; };
+		6CED87C0B6C8847EA3736931 /* DisasterAlertViewModelTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DisasterAlertViewModelTests.swift; sourceTree = "<group>"; };
+		6F926F6579787D941EA1D15A /* MockFamilyRepository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MockFamilyRepository.swift; sourceTree = "<group>"; };
+		7FEED4D591DA3B30C8CF8FBF /* FamilySafetyViewModelTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FamilySafetyViewModelTests.swift; sourceTree = "<group>"; };
+		88A144189EE5C321AAB1D57A /* MockRepositories.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MockRepositories.swift; sourceTree = "<group>"; };
+		909693707CABAA78FDEE7E58 /* EmergencyStatusViewModelTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EmergencyStatusViewModelTests.swift; sourceTree = "<group>"; };
+		962E7BDDC4D0C13722FFA1B9 /* LocationServiceTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LocationServiceTests.swift; sourceTree = "<group>"; };
+		9E11D6F60CA3466969B8208B /* DisasterPreparationViewModelTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DisasterPreparationViewModelTests.swift; sourceTree = "<group>"; };
+		B82518FD2FD19D4800C16BEC /* SafePathTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SafePathTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B825191A2FD1A38600C16BEC /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
+		B8C346332FD96E1B00D2F5AE /* SafePathWatchApp Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SafePathWatchApp Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8C3463F2FD96E1C00D2F5AE /* SafePathWatchApp Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SafePathWatchApp Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8C346492FD96E1C00D2F5AE /* SafePathWatchApp Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SafePathWatchApp Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8C347582FD973DE00D2F5AE /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS26.5.sdk/System/Library/Frameworks/WatchConnectivity.framework; sourceTree = DEVELOPER_DIR; };
+		BEAA62EEE2F72DE7CA447DBB /* MockEmergencyStatusRepository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MockEmergencyStatusRepository.swift; sourceTree = "<group>"; };
+		BEB840357D81C728A99CF2F5 /* ShelterViewModelTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShelterViewModelTests.swift; sourceTree = "<group>"; };
+		C5ED7091D806A52D8C4E0E23 /* PreparednessViewModelTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreparednessViewModelTests.swift; sourceTree = "<group>"; };
+		CF82FED938E7B7033944BFEA /* CustomizeChecklistViewModelTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CustomizeChecklistViewModelTests.swift; sourceTree = "<group>"; };
+		D679B00813AA28CFDFB76235 /* EmergencyStatusRepositoryTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EmergencyStatusRepositoryTests.swift; sourceTree = "<group>"; };
+		D9AD64016D6C1665A1B865DC /* DisasterAlertRepositoryTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DisasterAlertRepositoryTests.swift; sourceTree = "<group>"; };
+		DC70E3443123473C9E142361 /* SafePathAppTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SafePathAppTests.swift; sourceTree = "<group>"; };
+		DEEE78B306D8B06C952A542B /* MockPreparednessRepository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MockPreparednessRepository.swift; sourceTree = "<group>"; };
+		ECD451920A60752700576E0B /* UserManagementViewModelTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserManagementViewModelTests.swift; sourceTree = "<group>"; };
+		F422093B42886AADAB850B77 /* UserRepositoryTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserRepositoryTests.swift; sourceTree = "<group>"; };
+		FCE5A6E6BCE2ABB5C46CF274 /* ShelterRepositoryTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShelterRepositoryTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		526630F02FA39A560003F97E /* SafePath */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SafePath;
+			sourceTree = "<group>";
+		};
+		B8C346342FD96E1B00D2F5AE /* SafePathWatchApp Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "SafePathWatchApp Watch App";
+			sourceTree = "<group>";
+		};
+		B8C346422FD96E1C00D2F5AE /* SafePathWatchApp Watch AppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "SafePathWatchApp Watch AppTests";
+			sourceTree = "<group>";
+		};
+		B8C3464C2FD96E1C00D2F5AE /* SafePathWatchApp Watch AppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "SafePathWatchApp Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F684B2C2FD1737B00A40153 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		526630EB2FA39A560003F97E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				526631442FA3A7210003F97E /* FirebaseAuth in Frameworks */,
+				526631482FA3B07E0003F97E /* FirebaseCore in Frameworks */,
+				526631462FA3A72D0003F97E /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8C346302FD96E1B00D2F5AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8C347592FD973DE00D2F5AE /* WatchConnectivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8C3463C2FD96E1C00D2F5AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8C346462FD96E1C00D2F5AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00C38829A69EC7D957AEBE07 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				F422093B42886AADAB850B77 /* UserRepositoryTests.swift */,
+				3B75B134FF1E3423D4026ABA /* FamilyRepositoryTests.swift */,
+				D679B00813AA28CFDFB76235 /* EmergencyStatusRepositoryTests.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		026108542E2E41BE331D4D57 /* Person1 */ = {
+			isa = PBXGroup;
+			children = (
+				3C74C11E0C5673604D912055 /* TestDataFactory.swift */,
+				2792389F4C12265320F6D004 /* SafePathTests.swift */,
+				D9AD64016D6C1665A1B865DC /* DisasterAlertRepositoryTests.swift */,
+				6CED87C0B6C8847EA3736931 /* DisasterAlertViewModelTests.swift */,
+				FCE5A6E6BCE2ABB5C46CF274 /* ShelterRepositoryTests.swift */,
+				4E484216F2C7F1B0FBD9C19E /* RouteRepositoryTests.swift */,
+				88A144189EE5C321AAB1D57A /* MockRepositories.swift */,
+				BEB840357D81C728A99CF2F5 /* ShelterViewModelTests.swift */,
+				2D762DCC8D026BABD3C42DB9 /* EvacuationRouteViewModelTests.swift */,
+				962E7BDDC4D0C13722FFA1B9 /* LocationServiceTests.swift */,
+			);
+			path = Person1;
+			sourceTree = "<group>";
+		};
+		3A4C976D9824927A87534018 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				0B3BF251CD98D0B6754BA55E /* MockUserRepository.swift */,
+				62D30A3D3F43A9F671BE38F7 /* MockAPIService.swift */,
+				6F926F6579787D941EA1D15A /* MockFamilyRepository.swift */,
+				BEAA62EEE2F72DE7CA447DBB /* MockEmergencyStatusRepository.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		44AEAF0A3B5DBACFC3A6F90E /* SafePathAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE496BCC49C2D6D8B4C125A8 /* Person2 */,
+				7E37EC37215ED2B12EFCC9F7 /* Person3 */,
+				DC70E3443123473C9E142361 /* SafePathAppTests.swift */,
+				026108542E2E41BE331D4D57 /* Person1 */,
+			);
+			path = SafePathAppTests;
+			sourceTree = "<group>";
+		};
+		526630E52FA39A560003F97E = {
+			isa = PBXGroup;
+			children = (
+				B825191A2FD1A38600C16BEC /* TestPlan.xctestplan */,
+				526630F02FA39A560003F97E /* SafePath */,
+				B8C346342FD96E1B00D2F5AE /* SafePathWatchApp Watch App */,
+				B8C346422FD96E1C00D2F5AE /* SafePathWatchApp Watch AppTests */,
+				B8C3464C2FD96E1C00D2F5AE /* SafePathWatchApp Watch AppUITests */,
+				526630EF2FA39A560003F97E /* Products */,
+				44AEAF0A3B5DBACFC3A6F90E /* SafePathAppTests */,
+				B8C346272FD96C7A00D2F5AE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		526630EF2FA39A560003F97E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				526630EE2FA39A560003F97E /* SafePath.app */,
+				3F684B2F2FD1737B00A40153 /* SafePathAppTests.xctest */,
+				B82518FD2FD19D4800C16BEC /* SafePathTests.xctest */,
+				B8C346332FD96E1B00D2F5AE /* SafePathWatchApp Watch App.app */,
+				B8C3463F2FD96E1C00D2F5AE /* SafePathWatchApp Watch AppTests.xctest */,
+				B8C346492FD96E1C00D2F5AE /* SafePathWatchApp Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6CA3B87397031CEBEDD9830E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7FEED4D591DA3B30C8CF8FBF /* FamilySafetyViewModelTests.swift */,
+				ECD451920A60752700576E0B /* UserManagementViewModelTests.swift */,
+				909693707CABAA78FDEE7E58 /* EmergencyStatusViewModelTests.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7E37EC37215ED2B12EFCC9F7 /* Person3 */ = {
+			isa = PBXGroup;
+			children = (
+				DEEE78B306D8B06C952A542B /* MockPreparednessRepository.swift */,
+				C5ED7091D806A52D8C4E0E23 /* PreparednessViewModelTests.swift */,
+				2C45EEF6C37221253BB17A15 /* FirstAidGuideViewModelTests.swift */,
+				63D1CC584D97683A1B2E0D6D /* MockChecklistRepository.swift */,
+				003BF687DC208B331C2B4BC4 /* MockDisasterPreparationRepository.swift */,
+				CF82FED938E7B7033944BFEA /* CustomizeChecklistViewModelTests.swift */,
+				9E11D6F60CA3466969B8208B /* DisasterPreparationViewModelTests.swift */,
+				398DD9C699F3AEF2CF43E87A /* MockFirstAidRepository.swift */,
+			);
+			path = Person3;
+			sourceTree = "<group>";
+		};
+		AE496BCC49C2D6D8B4C125A8 /* Person2 */ = {
+			isa = PBXGroup;
+			children = (
+				3A4C976D9824927A87534018 /* Mocks */,
+				6CA3B87397031CEBEDD9830E /* ViewModels */,
+				00C38829A69EC7D957AEBE07 /* Repositories */,
+				2DEBF1A126027A588E2C15D2 /* TestDataFactory+Person2.swift */,
+			);
+			path = Person2;
+			sourceTree = "<group>";
+		};
+		B8C346272FD96C7A00D2F5AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8C347582FD973DE00D2F5AE /* WatchConnectivity.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F684B2E2FD1737B00A40153 /* SafePathAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F684B332FD1737B00A40153 /* Build configuration list for PBXNativeTarget "SafePathAppTests" */;
+			buildPhases = (
+				3F684B2B2FD1737B00A40153 /* Sources */,
+				3F684B2C2FD1737B00A40153 /* Frameworks */,
+				3F684B2D2FD1737B00A40153 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D121CF77E0048C5E025EEEC /* PBXTargetDependency */,
+			);
+			name = SafePathAppTests;
+			productName = SafePathAppTests;
+			productReference = 3F684B2F2FD1737B00A40153 /* SafePathAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		526630ED2FA39A560003F97E /* SafePath */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 526630F92FA39A590003F97E /* Build configuration list for PBXNativeTarget "SafePath" */;
+			buildPhases = (
+				526630EA2FA39A560003F97E /* Sources */,
+				526630EB2FA39A560003F97E /* Frameworks */,
+				526630EC2FA39A560003F97E /* Resources */,
+				B8C3462B2FD96C7A00D2F5AE /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8C3462D2FD96C8700D2F5AE /* PBXTargetDependency */,
+				B8B40D0F2FD9D7D600E14DA2 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				526630F02FA39A560003F97E /* SafePath */,
+			);
+			name = SafePath;
+			packageProductDependencies = (
+				526631432FA3A7210003F97E /* FirebaseAuth */,
+				526631452FA3A72D0003F97E /* FirebaseFirestore */,
+				526631472FA3B07E0003F97E /* FirebaseCore */,
+			);
+			productName = SafePath;
+			productReference = 526630EE2FA39A560003F97E /* SafePath.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B8C346322FD96E1B00D2F5AE /* SafePathWatchApp Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8C346542FD96E1C00D2F5AE /* Build configuration list for PBXNativeTarget "SafePathWatchApp Watch App" */;
+			buildPhases = (
+				B8C3462F2FD96E1B00D2F5AE /* Sources */,
+				B8C346302FD96E1B00D2F5AE /* Frameworks */,
+				B8C346312FD96E1B00D2F5AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B8C346342FD96E1B00D2F5AE /* SafePathWatchApp Watch App */,
+			);
+			name = "SafePathWatchApp Watch App";
+			packageProductDependencies = (
+			);
+			productName = "SafePathWatchApp Watch App";
+			productReference = B8C346332FD96E1B00D2F5AE /* SafePathWatchApp Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B8C3463E2FD96E1C00D2F5AE /* SafePathWatchApp Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8C346572FD96E1C00D2F5AE /* Build configuration list for PBXNativeTarget "SafePathWatchApp Watch AppTests" */;
+			buildPhases = (
+				B8C3463B2FD96E1C00D2F5AE /* Sources */,
+				B8C3463C2FD96E1C00D2F5AE /* Frameworks */,
+				B8C3463D2FD96E1C00D2F5AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8C346412FD96E1C00D2F5AE /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B8C346422FD96E1C00D2F5AE /* SafePathWatchApp Watch AppTests */,
+			);
+			name = "SafePathWatchApp Watch AppTests";
+			packageProductDependencies = (
+			);
+			productName = "SafePathWatchApp Watch AppTests";
+			productReference = B8C3463F2FD96E1C00D2F5AE /* SafePathWatchApp Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B8C346482FD96E1C00D2F5AE /* SafePathWatchApp Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8C3465A2FD96E1C00D2F5AE /* Build configuration list for PBXNativeTarget "SafePathWatchApp Watch AppUITests" */;
+			buildPhases = (
+				B8C346452FD96E1C00D2F5AE /* Sources */,
+				B8C346462FD96E1C00D2F5AE /* Frameworks */,
+				B8C346472FD96E1C00D2F5AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8C3464B2FD96E1C00D2F5AE /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B8C3464C2FD96E1C00D2F5AE /* SafePathWatchApp Watch AppUITests */,
+			);
+			name = "SafePathWatchApp Watch AppUITests";
+			packageProductDependencies = (
+			);
+			productName = "SafePathWatchApp Watch AppUITests";
+			productReference = B8C346492FD96E1C00D2F5AE /* SafePathWatchApp Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		526630E62FA39A560003F97E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2650;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					3F684B2E2FD1737B00A40153 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					526630ED2FA39A560003F97E = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					B8C346322FD96E1B00D2F5AE = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					B8C3463E2FD96E1C00D2F5AE = {
+						CreatedOnToolsVersion = 26.5;
+						TestTargetID = B8C346322FD96E1B00D2F5AE;
+					};
+					B8C346482FD96E1C00D2F5AE = {
+						CreatedOnToolsVersion = 26.5;
+						TestTargetID = B8C346322FD96E1B00D2F5AE;
+					};
+				};
+			};
+			buildConfigurationList = 526630E92FA39A560003F97E /* Build configuration list for PBXProject "SafePath" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 526630E52FA39A560003F97E;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5266313F2FA39D270003F97E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 526630EF2FA39A560003F97E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				526630ED2FA39A560003F97E /* SafePath */,
+				3F684B2E2FD1737B00A40153 /* SafePathAppTests */,
+				B8C346322FD96E1B00D2F5AE /* SafePathWatchApp Watch App */,
+				B8C3463E2FD96E1C00D2F5AE /* SafePathWatchApp Watch AppTests */,
+				B8C346482FD96E1C00D2F5AE /* SafePathWatchApp Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F684B2D2FD1737B00A40153 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		526630EC2FA39A560003F97E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B825191B2FD1A38600C16BEC /* TestPlan.xctestplan in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8C346312FD96E1B00D2F5AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8C3463D2FD96E1C00D2F5AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8C346472FD96E1C00D2F5AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F684B2B2FD1737B00A40153 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6CCFCE3096C67EC6FCE3A60 /* MockUserRepository.swift in Sources */,
+				24710173BCB2EF603678DD6C /* MockAPIService.swift in Sources */,
+				C1D9845FBBF9EBCD172C4B14 /* MockFamilyRepository.swift in Sources */,
+				812FF644AEB26068F906AC96 /* MockEmergencyStatusRepository.swift in Sources */,
+				282FED17C294E68067261AC8 /* FamilySafetyViewModelTests.swift in Sources */,
+				D65BDC8D19D147426F38DC93 /* UserManagementViewModelTests.swift in Sources */,
+				7104E6D7B1B0B466DDC69E89 /* EmergencyStatusViewModelTests.swift in Sources */,
+				EBEB87DB73A61D141FDCAA0D /* UserRepositoryTests.swift in Sources */,
+				7BFD528A823A4F7C5EEF72B4 /* FamilyRepositoryTests.swift in Sources */,
+				33174D40E876E0163EE8C40A /* EmergencyStatusRepositoryTests.swift in Sources */,
+				E5065258FC40ABC3F660BA92 /* TestDataFactory+Person2.swift in Sources */,
+				024DF0562BB9C849F4BB5D37 /* MockPreparednessRepository.swift in Sources */,
+				28057E803116F6A10EE5243E /* PreparednessViewModelTests.swift in Sources */,
+				049D1C098B0241FBFF52174E /* FirstAidGuideViewModelTests.swift in Sources */,
+				4525FDBAFE94A65E9FFCA55D /* MockChecklistRepository.swift in Sources */,
+				2D8DC59593143E1A6EA0BBCD /* MockDisasterPreparationRepository.swift in Sources */,
+				5A1B8B11CA68DA2361D8A3E1 /* CustomizeChecklistViewModelTests.swift in Sources */,
+				45DB4382091BA40950B2695A /* DisasterPreparationViewModelTests.swift in Sources */,
+				C53FA26539EBF6EF798740DE /* MockFirstAidRepository.swift in Sources */,
+				F6D1BA79B290428829F7121D /* SafePathAppTests.swift in Sources */,
+				2CBB9EEF08316E309932E026 /* TestDataFactory.swift in Sources */,
+				897226367EF64DE9F481ECBF /* SafePathTests.swift in Sources */,
+				DF46C151C74EF290D46F2D00 /* DisasterAlertRepositoryTests.swift in Sources */,
+				5C6897353DC82C5BD92985D3 /* DisasterAlertViewModelTests.swift in Sources */,
+				712FE010233907F499C0130B /* ShelterRepositoryTests.swift in Sources */,
+				190E87A29F65DD571933C395 /* RouteRepositoryTests.swift in Sources */,
+				1A83571A857F3D04475CC1AE /* MockRepositories.swift in Sources */,
+				150EC7462DC50A45E3F21201 /* ShelterViewModelTests.swift in Sources */,
+				31C142F4C5EBD1C8AE50604E /* EvacuationRouteViewModelTests.swift in Sources */,
+				BCD9119433A2363263984DE9 /* LocationServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		526630EA2FA39A560003F97E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8C3462F2FD96E1B00D2F5AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8C3463B2FD96E1C00D2F5AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8C346452FD96E1C00D2F5AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D121CF77E0048C5E025EEEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SafePath;
+			target = 526630ED2FA39A560003F97E /* SafePath */;
+			targetProxy = F0D87FF4D4E5856B9210D1A1 /* PBXContainerItemProxy */;
+		};
+		B8B40D0F2FD9D7D600E14DA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8C346322FD96E1B00D2F5AE /* SafePathWatchApp Watch App */;
+			targetProxy = B8B40D0E2FD9D7D600E14DA2 /* PBXContainerItemProxy */;
+		};
+		B8C3462D2FD96C8700D2F5AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			targetProxy = B8C3462C2FD96C8700D2F5AE /* PBXContainerItemProxy */;
+		};
+		B8C346412FD96E1C00D2F5AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8C346322FD96E1B00D2F5AE /* SafePathWatchApp Watch App */;
+			targetProxy = B8C346402FD96E1C00D2F5AE /* PBXContainerItemProxy */;
+		};
+		B8C3464B2FD96E1C00D2F5AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8C346322FD96E1B00D2F5AE /* SafePathWatchApp Watch App */;
+			targetProxy = B8C3464A2FD96E1C00D2F5AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3F684B342FD1737B00A40153 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "SafePath requires your location to provide accurate disaster alerts and show nearby shelters.";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SafePathAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SafePath.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SafePath";
+			};
+			name = Debug;
+		};
+		3F684B352FD1737B00A40153 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "SafePath requires your location to provide accurate disaster alerts and show nearby shelters.";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SafePathAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SafePath.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SafePath";
+			};
+			name = Release;
+		};
+		526630F72FA39A590003F97E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		526630F82FA39A590003F97E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		526630FA2FA39A590003F97E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SafePath;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "SafePath requires your location to provide accurate disaster alerts and show nearby shelters.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Mualli.SafePath;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		526630FB2FA39A590003F97E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SafePath;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "SafePath requires your location to provide accurate disaster alerts and show nearby shelters.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Mualli.SafePath;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B8C346552FD96E1C00D2F5AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SafePathWatchApp;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = Mualli.SafePath;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Mualli.SafePath.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.5;
+			};
+			name = Debug;
+		};
+		B8C346562FD96E1C00D2F5AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SafePathWatchApp;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = Mualli.SafePath;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Mualli.SafePath.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.5;
+			};
+			name = Release;
+		};
+		B8C346582FD96E1C00D2F5AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Althaf.SafePathWatchApp-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SafePathWatchApp Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SafePathWatchApp Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 26.5;
+			};
+			name = Debug;
+		};
+		B8C346592FD96E1C00D2F5AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Althaf.SafePathWatchApp-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SafePathWatchApp Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SafePathWatchApp Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 26.5;
+			};
+			name = Release;
+		};
+		B8C3465B2FD96E1C00D2F5AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Althaf.SafePathWatchApp-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "SafePathWatchApp Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 26.5;
+			};
+			name = Debug;
+		};
+		B8C3465C2FD96E1C00D2F5AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Althaf.SafePathWatchApp-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "SafePathWatchApp Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 26.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F684B332FD1737B00A40153 /* Build configuration list for PBXNativeTarget "SafePathAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F684B342FD1737B00A40153 /* Debug */,
+				3F684B352FD1737B00A40153 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		526630E92FA39A560003F97E /* Build configuration list for PBXProject "SafePath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				526630F72FA39A590003F97E /* Debug */,
+				526630F82FA39A590003F97E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		526630F92FA39A590003F97E /* Build configuration list for PBXNativeTarget "SafePath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				526630FA2FA39A590003F97E /* Debug */,
+				526630FB2FA39A590003F97E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8C346542FD96E1C00D2F5AE /* Build configuration list for PBXNativeTarget "SafePathWatchApp Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8C346552FD96E1C00D2F5AE /* Debug */,
+				B8C346562FD96E1C00D2F5AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8C346572FD96E1C00D2F5AE /* Build configuration list for PBXNativeTarget "SafePathWatchApp Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8C346582FD96E1C00D2F5AE /* Debug */,
+				B8C346592FD96E1C00D2F5AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8C3465A2FD96E1C00D2F5AE /* Build configuration list for PBXNativeTarget "SafePathWatchApp Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8C3465B2FD96E1C00D2F5AE /* Debug */,
+				B8C3465C2FD96E1C00D2F5AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5266313F2FA39D270003F97E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.12.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		526631432FA3A7210003F97E /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5266313F2FA39D270003F97E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		526631452FA3A72D0003F97E /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5266313F2FA39D270003F97E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		526631472FA3B07E0003F97E /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5266313F2FA39D270003F97E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 526630E62FA39A560003F97E /* Project object */;
+}
